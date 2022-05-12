@@ -16,6 +16,24 @@
         "clockTitle": "My Progress Clock",
         "clockTags": ["grinders", "sussuros","xabu"],
         "clockProgressLevel": 0
+    },
+    {
+        "clockSize": 8,
+        "clockTitle": "My Progress Clock",
+        "clockTags": ["grinders", "sussuros","xabu"],
+        "clockProgressLevel": 0
+    },
+    {
+        "clockSize": 8,
+        "clockTitle": "My Progress Clock",
+        "clockTags": ["grinders", "sussuros","xabu"],
+        "clockProgressLevel": 0
+    },
+    {
+        "clockSize": 8,
+        "clockTitle": "My Progress Clock",
+        "clockTags": ["grinders", "sussuros","xabu"],
+        "clockProgressLevel": 0
     }
     
 ]

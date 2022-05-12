@@ -2,8 +2,6 @@ import React from 'react';
 
 import styles from './Clock.module.scss';
 
-import mock from './mocks.json'; 
-
 interface Props {
     clockSize: number,
     clockTitle: string,
