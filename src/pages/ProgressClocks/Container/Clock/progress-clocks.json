@@ -1,0 +1,27 @@
+[
+    {
+        "clockSize": 4,
+        "progressLevels": [
+            {
+                "progressLevel": 0,
+                "svgUrl": "/assets/progress_clocks_svg/4/4-0.svg"
+            },
+            {
+                "progressLevel": 1,
+                "svgUrl": "/assets/progress_clocks_svg/4/4-1.svg"
+            },
+            {
+                "progressLevel": 2,
+                "svgUrl": "/assets/progress_clocks_svg/4/4-2.svg"
+            },
+            {
+                "progressLevel": 3,
+                "svgUrl": "/assets/progress_clocks_svg/4/4-3.svg"
+            },
+            {
+                "progressLevel": 4,
+                "svgUrl": "/assets/progress_clocks_svg/4/4-4.svg"
+            }
+        ]
+    }    
+]

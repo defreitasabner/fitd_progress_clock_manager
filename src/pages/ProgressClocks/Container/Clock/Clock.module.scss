@@ -1,0 +1,55 @@
+.progressClockContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: gray;
+    border-radius: 10%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.progressClockTitle {
+    grid-column: 1 / span 2;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.progressClockImageContainer {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.progressClockImage {
+    width: 200px;
+    align-content: center;
+}
+
+
+.progressClockButtonsContainer {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.progressClockTagsContainer {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.progressClockTags {
+    background-color: blue;
+    margin: 0.2rem;
+}
+
+
+
+
+
+
