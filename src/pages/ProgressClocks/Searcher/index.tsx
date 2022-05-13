@@ -15,7 +15,8 @@ export default function Searcher(props: Props) {
     
     return (
         <div className={styles.searcher__container}>
-            <input 
+            <input
+                className={styles.searcher}
                 value={search}
                 onChange={event => setSearch(event.target.value)}
                 placeholder="Search for a specific clock"

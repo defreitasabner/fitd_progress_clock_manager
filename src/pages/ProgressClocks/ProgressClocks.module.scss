@@ -5,3 +5,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #090C0E;
+    margin-bottom: 1rem;
+}

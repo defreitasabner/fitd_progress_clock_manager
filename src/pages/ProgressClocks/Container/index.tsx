@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Clock from './Clock';
 
@@ -8,14 +8,14 @@ import mocks from './mocks.json';
 
 export default function Container() {
 
-    const [clocksList, setClockList] = React.useState(mocks);
-    
+    const [clocks, setClocks] = React.useState(mocks);
+
     return (
         <div className={styles.container}>
-            {clocksList.map((clock, index) => (
+            {clocks.map((clock, index) => (
                 <Clock 
                     key={index}
-                    { ...clock}
+                    {...clock}
                 />
             ))}
         </div>

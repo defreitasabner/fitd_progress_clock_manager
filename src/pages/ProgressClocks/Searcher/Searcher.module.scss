@@ -1,5 +1,13 @@
 .searcher__container {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0.2rem;
+}
+
+.searcher {
+    border: none;
+    outline: none;
+    padding: 0.2rem;
 }
