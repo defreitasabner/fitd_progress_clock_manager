@@ -4,6 +4,7 @@ import Sorter from './Sorter';
 import Filter from './Filter';
 import Searcher from './Searcher';
 import Container from './Container';
+import CreateNewClockButton from './CreateNewClockButton';
 
 import styles from './ProgressClocks.module.scss';
 
@@ -19,9 +20,10 @@ export default function ProgressClocks() {
             <section className={styles.flexContainer}>
                 
                 <div className={styles.menu}>
+                    <Searcher search={search} setSearch={setSearch} />
                     <Sorter sort={sort} setSort={setSort} />
                     <Filter filter={filter} setFilter={setFilter} />
-                    <Searcher search={search} setSearch={setSearch} />
+                    <CreateNewClockButton />
                 </div>
 
                     <Container />

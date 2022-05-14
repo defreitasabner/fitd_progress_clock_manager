@@ -1,13 +1,12 @@
-.searcher__container {
+.searcher {
+    grid-column: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 0.2rem;
-}
-
-.searcher {
-    border: none;
-    outline: none;
-    padding: 0.2rem;
+    padding-right: 0.5rem;
+    &__input {
+        border: none;
+        outline: none;
+    }
 }

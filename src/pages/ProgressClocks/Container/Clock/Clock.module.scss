@@ -1,28 +1,41 @@
-$dark-olive-green: #556B2F;
-$dark-red: #8B0000;
 $white-smoke: #F5F5F5;
 $silver: #C0C0C0;
 $dim-gray: #696969;
 
+$light-black: #0d0e13;
+$dark-gray: #2b2c31;
+$gray: #4c4d52;
+
 .progressClockContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid;
-    gap: 1rem;
+    border: 1px dashed;
+    gap: 0.5rem;
     padding: 0.5rem;
     background-color: $white-smoke;
     &:hover {
-        background-color: $silver;
         box-shadow: 5px 5px 5px black;
         transition: box-shadow 0.2s ease-in-out;
+        border: 1px solid;
     }
 }
 
 .progressClockHeader {
     grid-column: 1 / span 2;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid;
+    padding: 0.5rem;
     &__title {
-        font-size: 1.8rem;
+        grid-column: 2 / span 3;
+        margin: 0;
+    }
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.2rem;
     }
 }
 
@@ -43,41 +56,16 @@ $dim-gray: #696969;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2rem;
-}
-
-.progressClockButton {
-    border: 1px dashed;
     padding: 0.5rem;
-    font-size: 1.2em;
-    font-weight: 700;
-    &:hover {
-        border: 1px solid;
-        transition: border 0.5s;
-        transition: background-color 0.5s;
-    }
-    &:active {
-        transform: scale(1.05);
-    }
-    &__increase {
-        margin-bottom: 0.5rem;
-        &:hover {
-            background-color: $dark-olive-green;
-        }
-    }
-    &__decrease {
-        &:hover {
-            background-color: $dark-red;
-        }
-    }
 }
 
 .progressClockTags {
     grid-column: 1 / span 2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    border-top: 1px solid;
     &__title {
         font-weight: 700;
     }
@@ -85,6 +73,11 @@ $dim-gray: #696969;
         border: 1px solid;
         padding: 0.1rem;
         margin: 0.2rem;
-        background-color: silver;
+        background-color: $white-smoke;
+        &:hover {
+            background-color: $light-black;
+            color: $white-smoke;
+            cursor: pointer;
+        }
     }
 }

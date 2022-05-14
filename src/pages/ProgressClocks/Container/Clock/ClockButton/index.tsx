@@ -1,15 +1,17 @@
 import React from 'react';
 
+import styles from './ClockButton.module.scss';
+import classNames from 'classnames';
+
 interface Props {
     name: string,
     type: string,
-    className: string,
     clockSize: number,
     clockProgressLevelStep: number,
     setClockProgressLevelStep: React.Dispatch<React.SetStateAction<number>>
 }
 
-export default function ClockButton({ name, type, className, clockSize, clockProgressLevelStep, setClockProgressLevelStep }: Props) {
+export default function ClockButton({ name, type, clockSize, clockProgressLevelStep, setClockProgressLevelStep }: Props) {
     
     function increaseClock() {
         if(clockProgressLevelStep !== clockSize) {
@@ -24,7 +26,11 @@ export default function ClockButton({ name, type, className, clockSize, clockPro
     }
     
     return (
-        <button className={className}
+        <button className={classNames({
+            [styles.progressClockButton]: true,
+            [styles.progressClockButton__increase]: type === 'increase'? true : false,
+            [styles.progressClockButton__decrease]: type === 'decrease'? true : false
+        })}
             onClick={ type === 'increase' ? increaseClock : decreaseClock }
         >{name}</button>
     )

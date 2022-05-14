@@ -1,16 +1,13 @@
 .flexContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     padding: 1rem;
     background-color: #090C0E;
-    margin-bottom: 1rem;
 }

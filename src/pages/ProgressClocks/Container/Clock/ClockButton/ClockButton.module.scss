@@ -1,0 +1,30 @@
+$dark-olive-green: #556B2F;
+$dark-red: #8B0000;
+
+.progressClockButton {
+    border: 1px dashed;
+    padding: 0.5rem;
+    font-size: 1.2em;
+    &:hover {
+        font-weight: 700;
+        transition: font-weight 0.5s;
+        border: 1px solid;
+        transition: border 0.5s;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(1.05);
+    }
+    &__increase {
+        margin-bottom: 0.5rem;
+        &:hover {
+            background-color: $dark-olive-green;
+        }
+    }
+    &__decrease {
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+}

@@ -1,9 +1,12 @@
 import React from 'react';
 
 import ClockButton from './ClockButton';
+import EditButton from './EditButton';
+import ArchiveButton from './ArchiveButton';
+import ArrowButton from './ArrowButton';
 
 import styles from './Clock.module.scss';
-import classNames from 'classnames';
+
 
 interface Props {
     clockSize: number;
@@ -22,7 +25,12 @@ export default function Clock(props: Props) {
         <div className={styles.progressClockContainer}>
 
             <div className={styles.progressClockHeader}>
+                <ArrowButton />
                 <h3 className = {styles.progressClockHeader__title}>{clockTitle}</h3>
+                <div className={styles.progressClockHeader__buttons}>
+                    <EditButton />
+                    <ArchiveButton />
+                </div>
             </div> 
 
             <div className={styles.progressClockMain}>
@@ -35,21 +43,13 @@ export default function Clock(props: Props) {
 
             <div className={styles.progressClockButtons}>
                 <ClockButton 
-                    className={classNames({
-                        [styles.progressClockButton]: true,
-                        [styles.progressClockButton__increase]: true
-                    })}
                     name="Increase" 
                     type="increase"
                     clockSize={clockSize} 
                     clockProgressLevelStep={clockProgressLevelStep}
                     setClockProgressLevelStep={setClockProgressLevelStep}
                 />
-                <ClockButton
-                    className={classNames({
-                        [styles.progressClockButton]: true,
-                        [styles.progressClockButton__decrease]: true
-                    })} 
+                <ClockButton 
                     name="Decrease" 
                     type="decrease"
                     clockSize={clockSize} 

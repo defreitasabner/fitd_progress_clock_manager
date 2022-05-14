@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './Filter.module.scss';
+
 interface Props {
     filter: number | null,
     setFilter: React.Dispatch<React.SetStateAction<number | null>>
@@ -7,7 +9,7 @@ interface Props {
 
 export default function Filter(props: Props) {
     return (
-        <div>
+        <div className={styles.filter}>
             Filter
         </div>
     )

@@ -1,0 +1,19 @@
+.createNewClockButton {
+    width: 50%;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+    padding: 1rem;
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    &:hover {
+        background-color: #DAA520;
+        transition: background-color 0.5s;
+    }
+}
