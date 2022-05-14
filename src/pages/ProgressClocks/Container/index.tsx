@@ -9,6 +9,7 @@ import mocks from './mocks.json';
 export default function Container() {
 
     const [clocks, setClocks] = React.useState(mocks);
+    const [containerOpen, setContainerOpen] = React.useState(false); // trying to minimize clock view
 
     return (
         <div className={styles.container}>
