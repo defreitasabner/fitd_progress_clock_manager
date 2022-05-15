@@ -1,0 +1,46 @@
+.createNewClockWindow {
+    display: grid;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    
+    background-color: whitesmoke;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px black;
+    padding: 1rem;
+    &--closed {
+        display: none; 
+    }
+    &__close {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__header {
+        text-align: center;
+        padding: 1rem;
+        &__title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+    &__form {
+        display: grid;
+        gap: 1rem;
+        &__clockSize {
+            display: flex;
+            justify-content: space-around;
+            &__text {
+                margin-left: 0.5rem;
+            }
+        }
+        &__label {
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+        &__legend {
+            font-weight: 700;
+        }
+    }
+}

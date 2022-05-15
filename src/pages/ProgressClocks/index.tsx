@@ -7,12 +7,14 @@ import Container from './Container';
 import CreateNewClockButton from './CreateNewClockButton';
 
 import styles from './ProgressClocks.module.scss';
+import CreateNewClockWindow from './CreateNewClockWindow';
 
 export default function ProgressClocks() {
     
     const [search, setSearch] = React.useState('');
     const [sort, setSort] = React.useState('');
     const [filter, setFilter] = React.useState<number | null>(null);
+    const [createNewClockWindowOpened, setCreateNewClockWindowOpened] = React.useState(false);
 
     return (
         <main>
@@ -23,8 +25,16 @@ export default function ProgressClocks() {
                     <Searcher search={search} setSearch={setSearch} />
                     <Sorter sort={sort} setSort={setSort} />
                     <Filter filter={filter} setFilter={setFilter} />
-                    <CreateNewClockButton />
+                    <CreateNewClockButton
+                        createNewClockWindowOpened={createNewClockWindowOpened} 
+                        setCreateNewClockWindowOpened={setCreateNewClockWindowOpened}
+                    />
                 </div>
+
+                    <CreateNewClockWindow 
+                        createNewClockWindowOpened={createNewClockWindowOpened} 
+                        setCreateNewClockWindowOpened={setCreateNewClockWindowOpened} 
+                    />
 
                     <Container />
             
