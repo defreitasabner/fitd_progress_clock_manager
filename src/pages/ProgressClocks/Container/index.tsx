@@ -6,10 +6,26 @@ import styles from './Container.module.scss';
 
 import mocks from './mocks.json';
 
-export default function Container() {
+interface Props {
+    search: string
+}
+
+export default function Container(props: Props) {
 
     const [clocks, setClocks] = React.useState(mocks);
     const [containerOpen, setContainerOpen] = React.useState(false); // trying to minimize clock view
+
+    const { search } = props;
+
+    function searchFor(clockName: string) {
+        const regex = new RegExp(search, 'i');
+        return regex.test(clockName);
+    }
+
+    React.useEffect(() => {
+        const newList = mocks.filter(clock => searchFor(clock.clockTitle));
+        setClocks(newList);
+    }, [search])
 
     return (
         <div className={styles.container}>

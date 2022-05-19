@@ -15,6 +15,10 @@
     &__close {
         display: flex;
         justify-content: flex-end;
+        opacity: 50%;
+        &:hover {
+            opacity: 100%;
+        }
     }
     &__header {
         text-align: center;

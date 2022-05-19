@@ -36,7 +36,7 @@ export default function ProgressClocks() {
                         setCreateNewClockWindowOpened={setCreateNewClockWindowOpened} 
                     />
 
-                    <Container />
+                    <Container search={search} />
             
             </section>
 
