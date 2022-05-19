@@ -23,8 +23,8 @@ export default function Container(props: Props) {
     }
 
     React.useEffect(() => {
-        const newList = mocks.filter(clock => searchFor(clock.clockTitle));
-        setClocks(newList);
+        const newClockList = mocks.filter(clock => searchFor(clock.clockTitle));
+        setClocks(newClockList);
     }, [search])
 
     return (
