@@ -1,4 +1,33 @@
 .filter {
     grid-column: auto;
     color: #F5F5F5;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+    }
+    &__title {
+        justify-self: center;
+    }
+    &__list {
+        display: none;
+        z-index: 1;
+        &--active {
+            display: flex;
+            flex-direction: column;
+            background-color: #F5F5F5;
+            position: relative;
+        }
+    }
+    &__name {
+        color: red;
+        &:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.filterName {
+    color: red;
 }

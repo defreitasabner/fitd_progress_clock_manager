@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "label": "no filter"
+    },
+    {
+        "id": 2,
+        "label": "tag_1"
+    },
+    {
+        "id": 3,
+        "label": "tag_2"
+    },
+    {
+        "id": 4,
+        "label": "tag_3"
+    }
+]
